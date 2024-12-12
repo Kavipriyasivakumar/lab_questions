@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() 
+{
+    int number; 
+    int *pointer; 
+    printf("ENTER AN INTEGER: ");
+    scanf("%d", &number);
+    pointer = &number;
+    printf("NUMBER: %d\n", *pointer);
+    int modification;
+    printf("ENTER THE MODIFICATION VALUE: ");
+    scanf("%d", &modification);
+    *pointer = modification;
+    printf("NUMBER: %d\n", *pointer);
+    return 0;
+}
