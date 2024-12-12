@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	int num1,num2;
+	int *ptr1,*ptr2;
+	printf("enter the values:");
+	scanf("%d%d",&num1,&num2);
+	ptr1=&num1;
+	ptr2=&num2;
+	printf("addition of %d and %d : %d\n",*ptr1,*ptr2,*ptr1+*ptr2);
+	printf("difference of %d and %d : %d\n",*ptr1,*ptr2,*ptr1-*ptr2);
+	printf("multiplication of %d and %d : %d\n",*ptr1,*ptr2,*ptr1 * *ptr2);
+	return 0;
+}
